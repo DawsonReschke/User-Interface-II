@@ -1,1 +1,225 @@
 /* Add CSS styling here */
+
+body{
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    width: 100vw;
+    background-color: white;
+    overflow-x:hidden;
+    /* border: 1px solid black; */
+}
+
+.container{
+    max-width: 1920px;
+    text-align: center;
+    margin:auto;
+}
+header{
+    background-color: #ADADAD;
+    /* border: 1px solid black; */
+}
+
+.my-project-button{
+    text-decoration: none;
+    padding:1%;
+    background-color: #2E1114;
+    color: #83677B;
+    text-align: center; 
+    border: 1px solid #501b1d;
+    border-radius: 2px;
+}
+
+.my-project-button:hover{
+    border:1px solid #2E1114;
+    background-color: #83677B;
+    color: #2E1114;
+}
+
+header .name{
+   padding: 0.25% 0 1% 0.8%;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 2.5rem;
+   /* border: 1px solid black; */
+}
+
+header nav{
+    margin-left: 2%;
+    padding-bottom: 1.5%;
+}
+header nav .buttons{
+    display: flex;
+}
+
+header nav .buttons a{
+    text-decoration: none;
+    padding: 0.8%;
+    font-size: 1.3rem;
+    width: 5vw;
+    background-color: #2E1114;
+    color: #83677B;
+    text-align: center; 
+    border: 1px solid #501b1d;
+    border-radius: 2px;
+}
+
+header nav .buttons a:hover{
+    border:1px solid #2E1114;
+    background-color: #83677B;
+    color: #2E1114;
+}
+
+.content{
+    color:black;
+    
+}
+
+.personal-img{
+    margin-left: 15vw;
+    display:inline-block;
+    height:30vh;
+    width: 40vw;
+    background-image: url('/assets/resizedImage.jpg');
+    background-size: 40vh;
+    background-repeat: no-repeat;
+}
+
+.who-am-i{
+    width: 40vw;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+}
+
+.about{
+    display: flex;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image{
+    display:flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: #ADADAD;
+}
+
+.image:hover h3{
+    display: block;
+}
+
+.image h3{
+    display: none;
+}
+
+#project-zero{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GAN1.png');
+    background-size: 20vw;;
+}
+
+#project-one{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GAN2.png');
+    background-size: 20vw;
+}
+
+#project-two{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GAN2.png');
+    background-size: 20vw;
+}
+
+#project-three{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GANA0.png');
+    background-size:20vw;
+}
+
+#project-four{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GANA1.png');
+    background-size: 20vw;
+}
+
+#project-five{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GANA2.png');
+    background-size: 20vw;
+}
+
+#project-six{
+    display:inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('/assets/GAN1.png');
+    background-size:20vw;;
+}
+
+footer{
+    background-color: #ADADAD;
+    padding: 2%;;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 2rem;
+    width: 5vw;
+    background-color: #2E1114;
+    color: #83677B;
+    text-align: center; 
+    border: 1px solid #501b1d;
+    border-radius: 2px;
+    padding: 0.5%;;
+}
+
+footer a:hover{
+    border:1px solid #2E1114;
+    background-color: #83677B;
+    color: #2E1114;
+}
+
+footer p{
+    font-size: 2rem;
+    text-align: center
+}
+
+footer nav{
+    display: flex;
+}
+
+footer nav .links a{
+    display: block;
+    text-align: center;
+    vertical-align: center;
+}
+
+/* footer nav a{
+
+} */
+
+footer nav .links{
+    display: inline-block;
+    /* width: 50%; */
+}
