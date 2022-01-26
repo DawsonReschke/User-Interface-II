@@ -1,1 +1,68 @@
 /* Add CSS styling here */
+
+body{
+    display:flex;
+    align-items: center;
+    font-size: 100%;
+    color: white;
+    width: 1920px;
+    /* border: 1px solid black; */
+}
+header{
+    background-color: #ADADAD;
+    /* border: 1px solid black; */
+}
+header .name{
+   padding: 0.25% 0 1% 0.8%;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 2.5rem;
+   /* border: 1px solid black; */
+}
+
+header nav{
+    margin-left: 2%;
+    padding-bottom: 1.5%;
+}
+header nav .buttons{
+    display: flex;
+}
+
+header nav .buttons a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 5vw;
+    background-color: #2E1114;
+    color: #83677B;
+    text-align: center; 
+    border: 1px solid #501b1d;
+    border-radius: 2px;
+}
+
+.content{
+    color:black;
+    
+}
+
+.personal-img{
+    margin-left: 15vw;
+    display:inline-block;
+    height:30vh;
+    width: 40vw;
+    background-image: url('/assets/resizedImage.jpg');
+    background-size: 40vh;
+    background-repeat: no-repeat;
+}
+
+.who-am-i{
+    width: 40vw;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+}
+
+.about{
+    display: flex;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
+}
