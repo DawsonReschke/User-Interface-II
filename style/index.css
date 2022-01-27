@@ -4,7 +4,7 @@ body{
     font-size: 100%;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: white;
     overflow-x:hidden;
     /* border: 1px solid black; */
@@ -16,7 +16,11 @@ body{
     margin:auto;
 }
 header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #ADADAD;
+    margin: 0 2%;
     /* border: 1px solid black; */
 }
 
@@ -37,6 +41,7 @@ header{
 }
 
 header .name{
+    width:100%;
    padding: 0.25% 0 1% 0.8%;
    font-family: 'Courier New', Courier, monospace;
    font-size: 2.5rem;
@@ -44,6 +49,7 @@ header .name{
 }
 
 header nav{
+    width: 100%;
     margin-left: 2%;
     padding-bottom: 1.5%;
 }
@@ -55,7 +61,6 @@ header nav .buttons a{
     text-decoration: none;
     padding: 0.8%;
     font-size: 1.3rem;
-    width: 5vw;
     background-color: #2E1114;
     color: #83677B;
     text-align: center; 
@@ -75,13 +80,19 @@ header nav .buttons a:hover{
 }
 
 .personal-img{
-    margin-left: 15vw;
+    background-image: url('/assets/resizedImage.jpg');
+    width: 30vw;
+    height: 40vw;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin-left: 15vw;
     display:inline-block;
     height:30vh;
     width: 40vw;
     background-image: url('/assets/resizedImage.jpg');
     background-size: 40vh;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .who-am-i{
@@ -93,21 +104,26 @@ header nav .buttons a:hover{
 
 .about{
     display: flex;
-    justify-content: end;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
 .projects{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .image{
-    display:flex;
-    flex-direction: column;
+    flex: 1 0 33%;
+    width: 30%;
+    /* display:flex; */
+    /* flex-direction: column; */
     font-size: 1.5rem;
+    /* margin:0.1%; */
     color: #ADADAD;
 }
 
@@ -117,6 +133,7 @@ header nav .buttons a:hover{
 
 .image h3{
     display: none;
+    font-size: 1rem;
 }
 
 #project-zero{
@@ -219,7 +236,88 @@ footer nav .links a{
 
 } */
 
-footer nav .links{
-    display: inline-block;
-    /* width: 50%; */
+
+
+
+
+@media (max-width:800px) {
+    *{
+        font-size: 65%;
+    }
+
+    header{
+        text-align: center;
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2%;
+    }
+    header nav .buttons{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    header nav .buttons a{
+        display:block;
+        width: 25%;
+        font-size: 2rem;
+    }
+
+    header .name p{
+        font-size: 2.5rem;
+    }
+
+    header .name{
+        padding: 0;
+    }
+
+
+    .image h3{
+        font-size: 1.3rem;
+    }
+
+   .about .who-am-i a{
+        font-size: 2rem;
+    }
+
+    .links a{
+        display: block;
+    }
+
+    .links{
+        display: block;
+        margin: auto;
+    }
 }
+
+@media (max-width:500px) {
+    *{
+        font-size: 50%;
+    }
+
+
+    .about p{
+        font-size: 0.8rem;
+    }
+
+    .about h1{
+        font-size: 1.3rem;
+    }
+    .buttons a{
+        font-size: 0.5rem;
+    }
+
+
+    .image h3{
+        font-size:1rem;
+    }
+    .image p{
+        font-size: 1.5rem;
+    }
+}
+
+
